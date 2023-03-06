@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+table{
+    height: 100%;
+    width: 100%;
+    empty-cells: hide;
+    border-collapse: collapse;
+    font-size: 30px;
+    text-decoration: solid;
+}
+
+td{
+    border: 1px solid black;
+}
+
+.centralblock{
+    height: 60%;
+    text-align: center;
+}
+
+.topblock, .bottomblock{
+    background-color: gold;
+}
+
+.topblock{
+    text-align: end;
+    border-right-color: gold;
+}
+
+.bottomblock {
+    border-right-color: gold;
+}

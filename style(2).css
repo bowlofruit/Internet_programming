@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+div{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.topblock, .bottomblock{
+    background-color: gold;
+    height: 15%;
+    border:1px solid black; 
+}
+
+.topblock p{
+    margin: 55px 120px 0 0;
+    text-align: end;
+}
+
+.bottomblock p{
+    margin: 55px 0 0 120px;
+    text-align: start;
+}
+
+.centralblock{
+    background-color: white;
+    height: 70%;
+}
+
+.centralblock div{
+    background-color: white;
+    float: left;
+    height: 100%;
+    width: 22.5%;
+    border:1px solid black;
+}
+
+.centralblock div p{
+    text-align: center;
+    margin-top: 210px;
+}
+
+.centralblock div:not(:first-child){
+    margin-left: 3.05%;
+}
+
+.insidetopblock{
+    background-color: white;
+    border: 1px solid black;
+    float: left;
+    width: 40%;
+    height: 60%;
+    vertical-align: middle;
+    margin: 25px 0 0 40px;
+}
