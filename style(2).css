@@ -1,60 +1,71 @@
 *{
-    margin: 0;
-  }
-  
-  html, body{
-    height: 100%;
-  }
-  
-  div{
-    font-size: 35px;
-    font-weight: bold;
-  }
-  
-  .topblock, .bottomblock{
-    background-color: gold;
-    height: 15%;
-    border: 1px solid black;
-  }
-  
-  .topblock p{
-    margin: 90px 150px 0 0;
-    text-align: end;
-  }
-  
-  .bottomblock p{
-    margin: 90px 0 0 150px;
-    text-align: start;
-  }
-  
-  .centralblock{
-    background-color: white;
-    height: 70%;
-    display: flex;
-  }
-  
-  .centralblock div{
-    background-color: white;
-    float: left;
-    height: 100%;
-    width: 22.5%;
-    border:1px solid black;
-  }
+  margin: 0;
+}
 
-  .centralblock p{
-    text-align: center;
-    margin-top: 300px;
-  }
-  
-  .centralblock div:not(:first-child){
-    margin-left: 3.05%;
-  }
-  
-  .insidetopblock{
-    float: left;
-    background-color: white;
-    border: 1px solid black;
-    width: 35%;
-    height: 55%;
-    margin: 45px 0 0 45px;
-  }
+html, body{
+  height: 100%;
+}
+
+body{
+  overflow: hidden;
+}
+
+div{
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.topblock, .bottomblock{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: gold;
+  height: 10%;
+  border: 1px solid black;
+}
+
+.insidetopblock{
+  display: block;
+  float: left;
+  background-color: white;
+  border: 1px solid black;
+  width: 44%;
+  height: 65%;
+  margin-left: 2%;
+}
+
+.bottomblock p{
+  margin-left: 10%;
+}
+
+.topblock p{
+  margin-left: 42%;
+}
+
+.centralblock{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: white;
+  height: 80%;
+}
+
+.centralblock div{
+  height: 100%;
+  width: 22.5%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.centralblock p{
+  text-align: center;
+  margin-top: 20vh;
+}
+
+.redblock{
+  background-color: #f6523d;
+}
+
+.blueblock{
+  background-color: #0066ff;
+}

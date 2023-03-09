@@ -21,25 +21,25 @@
   }
   
   .centralblock {
-    height: 70%;
+    height: 80%;
     text-align: center;
   }
   
   .centralblock p {
-    padding-bottom: 400px;
+    margin-bottom: 35vh;
   }
   
   .topblock, .bottomblock {
     background-color: gold;
   }
-  
-  .topblock {
-    padding-right: 150px;
-    text-align: end;
+
+  .topblock p{
+    text-align: right;
+    margin-right: 22%;
   }
   
-  .bottomblock {
-    padding-left: 150px;
+  .bottomblock p{
+    margin-left: 10%;
   }
   
   .insideblock {
@@ -48,8 +48,16 @@
   }
 
   .insideblock table {
-    width: 70%;
-    height: 50%;
+    width: 85%;
+    height: 65%;
     background-color: white;
-    margin: 0 120px 0 50px;
-  }  
+    margin-left: 4%;
+  }
+
+  .redblock{
+    background-color: #f6523d;
+  }
+
+  .blueblock{
+    background-color: #0066ff;
+  }

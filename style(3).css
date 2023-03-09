@@ -6,6 +6,10 @@ html, body{
     height: 100%;
 }
 
+body{
+    overflow: hidden;
+}
+
 div{
     font-size: 35px;
     font-weight: bold;
@@ -16,7 +20,7 @@ div{
     flex-direction: row;
     align-items: center;
     background-color: gold;
-    height: 15%;
+    height: 10%;
     border:1px solid black; 
 }
 
@@ -24,37 +28,38 @@ div{
     display: inline-block;
     background-color: white;
     border: 1px solid black;
-    width: 40%;
-    height: 50%;
-    margin-left: 3%;
+    width: 44%;
+    height: 65%;
+    margin-left: 2%;
 }
 
 .bottomblock p{
-    margin-left: 80px;
+    margin-left: 10%;
 }
 
 .toptext{
-    margin-left: 45%;
+    margin-left: 42%;
 }
 
 .centralblock{
     display: flex;
     flex-direction: row;
-    background-color: white;
-    height: 70%;
     justify-content: space-between;
+    background-color: white;
+    height: 80%;
 }
 
-.centralblock div {
+.centralblock div{
     display: inline-block;
     height: 100%;
     width: 22.5%;
-    border:1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
 }
 
-.centralblock div p{
+.centralblock p{
     text-align: center;
-    margin-top: 200px;
+    margin-top: 20vh;
 }
 
 .redblock{
