@@ -1,60 +1,60 @@
 *{
     margin: 0;
-}
-
-html, body{
+  }
+  
+  html, body{
     height: 100%;
-}
-
-div{
-    font-size: 30px;
+  }
+  
+  div{
+    font-size: 35px;
     font-weight: bold;
-}
-
-.topblock, .bottomblock{
+  }
+  
+  .topblock, .bottomblock{
     background-color: gold;
     height: 15%;
-    border:1px solid black; 
-}
-
-.topblock p{
-    margin: 55px 120px 0 0;
+    border: 1px solid black;
+  }
+  
+  .topblock p{
+    margin: 90px 150px 0 0;
     text-align: end;
-}
-
-.bottomblock p{
-    margin: 55px 0 0 120px;
+  }
+  
+  .bottomblock p{
+    margin: 90px 0 0 150px;
     text-align: start;
-}
-
-.centralblock{
+  }
+  
+  .centralblock{
     background-color: white;
     height: 70%;
-}
-
-.centralblock div{
+    display: flex;
+  }
+  
+  .centralblock div{
     background-color: white;
     float: left;
     height: 100%;
     width: 22.5%;
     border:1px solid black;
-}
+  }
 
-.centralblock div p{
+  .centralblock p{
     text-align: center;
-    margin-top: 210px;
-}
-
-.centralblock div:not(:first-child){
+    margin-top: 300px;
+  }
+  
+  .centralblock div:not(:first-child){
     margin-left: 3.05%;
-}
-
-.insidetopblock{
+  }
+  
+  .insidetopblock{
+    float: left;
     background-color: white;
     border: 1px solid black;
-    float: left;
-    width: 40%;
-    height: 60%;
-    vertical-align: middle;
-    margin: 25px 0 0 40px;
-}
+    width: 35%;
+    height: 55%;
+    margin: 45px 0 0 45px;
+  }

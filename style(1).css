@@ -1,39 +1,55 @@
-*{
+* {
     margin: 0;
-}
-
-html, body{
+  }
+  
+  html, body {
     height: 100%;
     width: 100%;
-}
-
-table{
+  }
+  
+  table {
     height: 100%;
     width: 100%;
     empty-cells: hide;
     border-collapse: collapse;
-    font-size: 30px;
-    text-decoration: solid;
-}
-
-td{
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+  td {
     border: 1px solid black;
-}
-
-.centralblock{
-    height: 60%;
+  }
+  
+  .centralblock {
+    height: 70%;
     text-align: center;
-}
-
-.topblock, .bottomblock{
+  }
+  
+  .centralblock p {
+    padding-bottom: 400px;
+  }
+  
+  .topblock, .bottomblock {
     background-color: gold;
-}
-
-.topblock{
+  }
+  
+  .topblock {
+    padding-right: 150px;
     text-align: end;
+  }
+  
+  .bottomblock {
+    padding-left: 150px;
+  }
+  
+  .insideblock {
+    background-color: gold;
     border-right-color: gold;
-}
+  }
 
-.bottomblock {
-    border-right-color: gold;
-}
+  .insideblock table {
+    width: 70%;
+    height: 50%;
+    background-color: white;
+    margin: 0 120px 0 50px;
+  }  

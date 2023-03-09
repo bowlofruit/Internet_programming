@@ -7,36 +7,46 @@ html, body{
 }
 
 div{
-    font-size: 30px;
+    font-size: 35px;
     font-weight: bold;
 }
 
 .topblock, .bottomblock{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     background-color: gold;
     height: 15%;
     border:1px solid black; 
 }
 
 .insidetopblock{
+    display: inline-block;
     background-color: white;
     border: 1px solid black;
-    padding: 0 350px 50px 0;
-    margin: 0 370px 0 40px;
+    width: 40%;
+    height: 50%;
+    margin-left: 3%;
 }
 
 .bottomblock p{
-    margin: 80px 0 0 120px;
-    text-align: start;
+    margin-left: 80px;
+}
+
+.toptext{
+    margin-left: 45%;
 }
 
 .centralblock{
+    display: flex;
+    flex-direction: row;
     background-color: white;
     height: 70%;
+    justify-content: space-between;
 }
 
-.centralblock div{
+.centralblock div {
     display: inline-block;
-    background-color: white;
     height: 100%;
     width: 22.5%;
     border:1px solid black;
@@ -47,6 +57,10 @@ div{
     margin-top: 200px;
 }
 
-.centralblock div:not(:first-child){
-    margin-left: 2.25%;
+.redblock{
+    background-color: #f6523d;
+}
+
+.blueblock{
+    background-color: #0066ff;
 }
