@@ -1,0 +1,25 @@
+html, body{
+    background-color: #7ab1e6;
+    height: 100%;
+    width: 100%;
+}
+
+.headblock{
+    width: 15%;
+    background-color: blue;
+}
+
+.headtext{
+    display: flex;
+    font-size: 30px;
+    text-shadow: 1px 2px #558ABB;
+}
+
+.headtext:hover::before {
+    content: "the_";
+    color: green;
+}
+.headtext:hover::after {
+    content: "_site";
+    color: green;
+}
