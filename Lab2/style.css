@@ -1,25 +1,222 @@
-html, body{
-    background-color: #7ab1e6;
-    height: 100%;
-    width: 100%;
+*{
+    margin: 0;
 }
 
-.headblock{
-    width: 15%;
-    background-color: blue;
+body{
+    background-color: #3b9aff;
 }
 
-.headtext{
+.origin-border-and-margin-set{
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 0.1%;
+}
+
+.head-block{
     display: flex;
-    font-size: 30px;
-    text-shadow: 1px 2px #558ABB;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 15vh;
+    background-color: #0055ffc2;
 }
 
-.headtext:hover::before {
-    content: "the_";
-    color: green;
+.head-text{
+    font-weight: bold;
+    color:white;
+    font-size: 30px;
+    text-shadow: 1px 2px #f70000, -2px -3px #3b9aff;
+    font-family: 'Courier New', Courier, monospace;
 }
-.headtext:hover::after {
+
+.head-text:hover::before {
+    content: "the_";
+}
+
+.head-text:hover::after {
     content: "_site";
-    color: green;
+}
+
+.join-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+
+.join-button:hover{
+    width: 180px;
+    border-radius: 40px;
+}
+
+.join-button:hover::after{
+    content: "\00a0us on Telegram";
+    color: white;
+}
+
+.main-center-block{
+    display: flex;
+    height: 45%;
+    background-color: #3b9aff;
+}
+
+
+.side-block{
+    width: 20%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 10px 10px 10px orange;
+    margin-bottom: 0.2%;
+}
+
+.side-block-text{
+    color: orange;
+    transform: rotate(90deg);
+    font-weight: bold;
+    font-size: 30px;
+    white-space: nowrap;
+}
+
+.central-block{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+}
+
+.central-div-sorted{
+    display: flex;
+    justify-content: space-around;
+}
+
+.images-block{
+    border-radius: 10px;
+    width: 50%;
+}
+
+.top-right-origins:hover{
+    transform-origin: top right;
+}
+
+.top-left-origins:hover{
+    transform-origin: top left;
+}
+
+.bottom-right-origins:hover{
+    transform-origin: bottom right;
+}
+
+.bottom-left-origins:hover{
+    transform-origin: bottom left;
+}
+
+.images-block:hover{
+    transform: scale(1.8);
+    transition: 0.7s;
+}
+
+.main-text-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 23vh;
+}
+
+.main-text-block-text{
+    background-color: white;
+    overflow: auto;
+    overflow-wrap: break-word;
+    text-align: justify;
+    border-radius: 6px;
+    margin: 0 0.1%;
+}
+
+.footer-block{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+    background-color: #0055ffc2;
+    color: white;
+}
+
+.footer-div-sorted{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-block-head-text{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.footer-nav a {
+    font-size: 15px;
+    color: #f2f2f2;
+    padding-left: 10px;
+    text-decoration: none;
+}
+  
+.footer-nav a:hover {
+    color: black;
+}
+
+.footer-block-text{
+    font-size: 15px;
+}
+
+@media only screen and (max-width: 768px){
+    .main-center-block{
+        flex-direction: column-reverse;
+    }
+
+    .central-block{
+        width: 100%;
+    }
+
+    .side-block{
+        width: 100%;
+        height: 15vh;
+    }
+
+    .side-block-text{
+        transform: rotate(0);
+    }
+
+    .central-div-sorted{
+        flex-direction: column;
+    }
+
+    .images-block{
+        width: 100%;
+    }
+
+    .main-text-block{
+        flex-direction: column;
+        margin: 0 0.2%;
+    }
+    
+    .main-text-block-text{
+        margin: 0.2%;
+    }
+
+    .top-left-origins:hover, .top-left-origins:hover, .bottom-left-origins:hover, .bottom-right-origins:hover{
+        transform-origin: unset;
+    }
+
+    .images-block:hover{
+        transform: scale(1);
+    }
 }
