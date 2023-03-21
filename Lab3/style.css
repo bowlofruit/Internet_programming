@@ -1,3 +1,60 @@
-html {
-  background-color: gray;
+html{
+  background-color: #3e3c3c;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.keys {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(11, 1fr);
+  grid-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.key, .pressedkey {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #939393;
+  border: 1px solid #000000;
+  color: black;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.pressedkey {
+  background-color: #3e3939;
+}
+
+.key:hover {
+  background-color: #f2f2f2;
+}
+
+.output {
+  margin-top: 15vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+
+input{
+  width: 96vw;
+  height: 20vh;
+  word-wrap: normal;
+  background-color: #3e3c3c;
+  text-align: center;
+  color: gainsboro;
+  font-size: 30px;
+  font-weight: bold;
 }
