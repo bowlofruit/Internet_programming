@@ -8,7 +8,7 @@ async function loadKeyboardData() {
     const key = createKeyElement(keyData.value === "Backspace" ? "BC" : keyData.value);
     setKeyClickListener(key, keyData.value);
     keysContainer.appendChild(key);
-  });
+  })
 }
 
 function createKeyElement(textContent) {
@@ -20,8 +20,6 @@ function createKeyElement(textContent) {
 
 function setKeyClickListener(key, keyValue) {
   const output = document.getElementById('output');
-  let lastKeyPressTime = 0;
-  const repeatDelay = 200;
 
   key.addEventListener('click', () => {
     if (keyValue === "Backspace") {

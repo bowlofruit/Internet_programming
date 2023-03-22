@@ -1,5 +1,5 @@
 html{
-  background-color: #3e3c3c;
+  background-color: #1d1b1b;
 }
 
 .keyboard {
@@ -49,10 +49,10 @@ html{
 }
 
 input{
-  width: 96vw;
-  height: 20vh;
+  width: 80vw;
+  height: 40vh;
   word-wrap: normal;
-  background-color: #3e3c3c;
+  background-color: #1ab30f;
   text-align: center;
   color: gainsboro;
   font-size: 30px;
