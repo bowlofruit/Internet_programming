@@ -1,5 +1,5 @@
 async function loadKeyboardData() {
-  const response = await fetch('keyboard.json');
+  const response = await fetch('./keylist.json');
   const data = await response.json();
   const keys = data.keys;
 
