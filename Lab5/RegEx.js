@@ -1,12 +1,24 @@
-const input = "dsf xxx xxx xxx sd";
-const output = input.replace(/\b(\w+)\b(\s+\1)+/, "$1");
-console.log(output);
+const inputElem = document.getElementById('input');
+const outputElem = document.getElementById('output');
 
+inputElem.addEventListener('input', () => {
+  const input = inputElem.value;
+  const output = input.replace(/\b(\w+)\b(\s+\1)+/, '$1');
+  outputElem.textContent = output;
+});
 
-const email = 'example@gmail.com';
-const regex = /\b[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
-if (regex.test(email)) {
-  console.log('Адреса електронної пошти валідна');
-} else {
-  console.log('Адреса електронної пошти невалідна');
-}
+const inputEmailElem = document.getElementById('input-email');
+const outputEmailElem = document.getElementById('output-email');
+
+inputEmailElem.addEventListener('input', () => {
+  const email = inputEmailElem.value;
+  const regex = /\b[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  let result = '';
+  if (regex.test(email)) {
+    result = 'Адреса електронної пошти валідна';
+  } 
+  else {
+    result = 'Адреса електронної пошти невалідна';
+  }
+  outputEmailElem.textContent = result;
+});

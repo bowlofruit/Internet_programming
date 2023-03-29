@@ -5,7 +5,7 @@ function generateCalendar() {
   const header = document.querySelector('header');
   const days = document.querySelector('.days');
   const dates = document.querySelector('.dates');
-  const weekdays = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+  const weekdays = ['ПН', 'ВТ', 'СР', 'ЧТ', 'ПТ', 'СБ', 'НД'];
   const output = document.querySelector('.output');
   const reset = document.querySelector('.reset');
 
@@ -55,7 +55,7 @@ function generateCalendar() {
 function updateCalendar(dates, year, month, monthName, output) {
   const daysInMonth = new Date(year, month + 1, 0).getDate();
 
-  monthName.textContent = `${new Date(year, month).toLocaleString('default', { month: 'long' })} ${year}`;
+  monthName.textContent = `${new Date(year, month).toLocaleString('uk-UA', { month: 'long' })} ${year}`;
 
   dates.textContent = '';
   let date = 1;
