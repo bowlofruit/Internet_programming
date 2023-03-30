@@ -77,7 +77,7 @@ function updateCalendar(dates, year, month, monthName, output) {
         if(!startPointFlag){
           startPointFlag = true;
           startPointDate = date;
-          output.textContent = "Choose second date";
+          output.textContent = "Оберіть другу дату";
         }
         else{
           endPointFlag = true;
