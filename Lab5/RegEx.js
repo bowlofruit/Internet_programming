@@ -3,7 +3,7 @@ const outputElem = document.getElementById('output');
 
 inputElem.addEventListener('input', () => {
   const input = inputElem.value;
-  const output = input.replace(/\b(\w+)\b(\s+\1)+/gi, '$1');
+  const output = input.replace(/\b(\w+)\b(\s+\1)+/g, '$1');
   outputElem.textContent = output;
 });
 
