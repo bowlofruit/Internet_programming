@@ -12,7 +12,7 @@ const outputEmailElem = document.getElementById('output-email');
 
 inputEmailElem.addEventListener('input', () => {
   const email = inputEmailElem.value;
-  const regex = /\b[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+  const regex = /\b[\w-\.]+@(?:([\w-]+\.))+[\w-]{2,}/;
   let result = '';
   if (regex.test(email)) {
     result = 'Адреса електронної пошти валідна';
